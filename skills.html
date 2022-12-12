@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ehtesham Mohammed</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="scripts/utilities.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body id="app">
+  <main :style="'background-color:'+backColor+';color:'+textColor">
+    <div class="main">
+      <headercomp highlight="Skills"></headercomp>
+      <section class="content-body">
+        <div class="slider flex-col">
+          <h1 class="m-cont statement text-center">
+            Skills
+          </h1>
+        </div>
+        <section class="skills flex flex-col">
+          <div class="flex">
+            <div class="skill-element">
+              <i class="ri-pencil-ruler-2-fill"></i>
+              <h2>Product Design</h2>
+              <p>Product design as a verb is to create a new product to be sold by a business to its customers. A very
+                broad coefficient and effective generation and development of ideas through a process that leads to new
+                products.</p>
+            </div>
+            <div class="skill-element">
+              <i class="ri-server-fill"></i>
+              <h2>Backend Application Development</h2>
+              <p>Back-end development means working on server-side software, which focuses on everything you can't see
+                on
+                a website focusing on databases, back-end logic, application programming interface (APIs), architecture,
+                and servers.</p>
+            </div>
+            <div class="skill-element">
+              <i class="ri-smartphone-fill"></i>
+              <h2>Mobile Application Development</h2>
+              <p>Mobile app development is the act or process by which a mobile app is developed for mobile devices,
+                such
+                as personal digital assistants, enterprise digital assistants or mobile phones.</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="skill-element">
+              <i class="ri-database-2-fill"></i>
+              <h2>Database Management</h2>
+              <p>
+                Users of the system are given facilities to perform several kinds of operations on such a system for
+                either manipulation of the data in the database or the management of the database structure itself.
+              </p>
+            </div>
+            <div class="skill-element">
+              <i class="ri-gamepad-fill"></i>
+              <h2>Game Development</h2>
+              <p>Video game development is the process of developing a video game. The effort is undertaken by a
+                developer, ranging from a single person to an international team dispersed across the globe.</p>
+            </div>
+            <div class="skill-element">
+              <i class="ri-store-3-fill"></i>
+              <h2>ECommerce Development</h2>
+              <p>Involves anything from building a simple website with a few products for sale, to developing a
+                complex platform with hundreds or even thousands of items.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footercomp></footercomp>
+    </div>
+  </main>
+</body>

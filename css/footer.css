@@ -1,0 +1,23 @@
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: x-large;
+    margin: 0px 10px;
+  }
+  
+  footer a:hover {
+    color: var(--primary-dark);
+  }
+  
+  .copyright {
+    font-size: smaller;
+    color: var(--gray-medium);
+  }

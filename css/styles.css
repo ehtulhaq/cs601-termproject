@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700&display=swap');
+
+:root {
+  --primary: #e96737;
+  --primary-dark: #b7522d;
+  --secondary: #e96737;
+  --secondary-dark: #b7522d;
+  --primary-highlight: #ffe6d8;
+  --gray-lite: #aeaeae;
+  --gray-medium: #8e8e8e;
+  --gray-highlight: #f8f8f8;
+  --black: #000;
+  --width-full: 100%;
+  --width-pad: 85%;
+  --width-container: 80%;
+  --border-s: 0.5em;
+  --border-m: 1em;
+  --border-l: 2em;
+  --border-xl: 4em;
+}
+
+* {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  overflow: scroll;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: var(--width-container);
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  font-size: large;
+  font-weight: bold;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+button {
+  border-radius: var(--border-s);
+  padding: 0.5em 4em;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 500;
+  background-color: white;
+  transition: all ease-in 0.25s;
+}
+
+button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+v-cloak {
+  display: none;
+}
+
+.fade-enter-active {
+  transition: all 0.5s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0.25;
+}
+
+.text-sm {
+  font-size: smaller;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-cont {
+  margin: 45px 0px;
+}
+
+.m-2 {
+  margin: 10px;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-50 {
+  flex-basis: 50%;
+}
+
+.flex-25 {
+  flex-basis: 25%;
+}
+
+.flex-75 {
+  flex-basis: 75%;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+  align-self: flex-start;
+  top: 25px;
+  overflow-y: auto;
+}
+
+.primary {
+  color: var(--primary)
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  width: var(--width-full);
+}
+
+.box {
+  border-radius: var(--border-s);
+  overflow: hidden;
+  position: relative;
+}
+
+.a {
+  grid-column: 1 / span 2;
+}
+
+.b {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.c {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.d {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.button-black {
+  border-radius: var(--border-s);
+  border: 1px solid var(--black);
+  color: var(--black);
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 500;
+  background-color: white;
+  transition: all ease-in 0.25s;
+}
+
+.button-black:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+.error-text {
+  color: red;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 30em) {
+  .main {
+    width: var(--width-full);
+  }
+
+  button {
+    width: var(--width-full);
+  }
+}
+
+@media only screen and (max-width:60em) {
+  .main {
+    width: var(--width-full);
+  }
+}

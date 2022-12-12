@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ehtesham Mohammed</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="scripts/utilities.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body id="app">
+  <main :style="'background-color:'+backColor+';color:'+textColor">
+    <div class="main">
+      <headercomp highlight="Videos"></headercomp>
+      <section class="content-body">
+        <div class="slider flex-col">
+          <h1 class="statement text-center">
+            Videos
+          </h1>
+          <p class="text-center">Here are some videos from my education chanel. <a target="_blank" class="a-link"
+              href="https://www.youtube.com/@ehtulhaq7267/playlists">View all playlists</a></p>
+          <div class="video-container m-cont">
+            <div class="row">
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/N7Sk2Z25BAo" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/FIE-NiqgB3Y" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="row">
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/-2pnCOdQ408" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/wt-kx-anYyA" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footercomp></footercomp>
+    </div>
+  </main>
+</body>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ehtesham Mohammed</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="scripts/utilities.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body id="app">
+  <main :style="'background-color:'+backColor+';color:'+textColor">
+    <div class="main">
+      <headercomp highlight="Skills"></headercomp>
+      <div class="content-body">
+        <div class="slider flex-col">
+          <h1 class="statement text-center error-text">
+            404
+          </h1>
+          <p class="m-2">The page you are looking for does not exists</p>
+          <a class="a-link" href="home.html">Check About Ehtesham</a>
+        </div>
+      </div>
+      <footercomp></footercomp>
+    </div>
+  </main>
+</body>

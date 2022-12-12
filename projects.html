@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ehtesham Mohammed</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="scripts/utilities.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body id="app">
+  <main :style="'background-color:'+backColor+';color:'+textColor">
+    <div class="main">
+      <headercomp highlight="Projects"></headercomp>
+      <section class="content-body">
+        <div class="slider flex-col">
+          <h1 class="m-cont statement text-center">
+            Projects
+          </h1>
+        </div>
+        <div class="projects-container wrapper">
+          <div class="box a">
+            <img alt="Coca Cola" src="./img/coca_cola.jpg">
+            <div class="project-desc">
+              <h2>Coca Cola</h2>
+              <p>Coke zero, Coke journey and Next generation employee website including MyKO(coca cola connect) enables
+                coke employees to get latest updates, news, promotions, offers in the company and it also enables them
+                to share and store the news. MyKO is 90 personalized which lets the authors of the content to publish
+                different types of users.</p>
+            </div>
+          </div>
+          <div class="box b">
+            <img alt="Cathay Pacific Airways" src="./img/airway.jpg">
+            <div class="project-desc">
+              <h2>Cathay Pacific</h2>
+              <p>Architecture review, Design Development and testing of the new application spanning sales and
+                marketing, bookings, frequent flyer, environment and media related modules. Shared resource between this
+                and Astrazeneca project</p>
+            </div>
+          </div>
+          <div class="box c">
+            <img alt="Briggs And Stratton" src="./img/engine.jpg">
+            <div class="project-desc">
+              <h2>Briggs And Stratton</h2>
+              <p>Briggs & Stratton is an American industrial company primarily involved in engineering, developing and
+                manufacturing internal combustion reciprocating gas engines. Migration of existing website into a new
+                designed website with AEM as front end and Hybris as backend technologies. </p>
+            </div>
+          </div>
+          <div class="box d">
+            <img alt="Wyndham Hotels" src="./img/wyndham.jpg">
+            <div class="project-desc">
+              <h2>Wyndham Hotels</h2>
+              <p>Overhaul of the legacy websites to modern design with Experience Manager, Backbone, Hybrid CMS
+                pattern. Getting higher conversion rates with modern design patterns and technologies. Increasing
+                Revenues and improving user experiences. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footercomp></footercomp>
+    </div>
+  </main>
+</body>
